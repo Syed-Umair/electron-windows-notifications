@@ -1,6 +1,6 @@
 const path = require('path')
 const {remote} = require('electron')
-const ElectronWindowsNotifications = require('electron-windows-notifications');
+const ElectronWindowsNotifications = require('electron-windows-notifications-rs4');
 
 const {ToastNotification, TileNotification, Template, SecondaryTile} = ElectronWindowsNotifications
 
@@ -39,7 +39,7 @@ function sendNotification(evt) {
 		template: template.getXML(),
 		strings: strings
   })
-  
+
   // register to notification events
   notification.on('failed', () => textNode.text('Notification failed!'))
   notification.on('dismissed', () => textNode.text('Notification dismissed!'))

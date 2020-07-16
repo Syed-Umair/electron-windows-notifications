@@ -24,7 +24,7 @@ The constructor for the `ToastNotification` class accepts an options `object` wi
 
 ```JS
 const appId = 'electron-windows-notifications'
-const {ToastNotification} = require('electron-windows-notifications')
+const {ToastNotification} = require('electron-windows-notifications-rs4')
 
 let notification = new ToastNotification({
     appId: appId,
@@ -46,7 +46,7 @@ Tile notifications update the app's primary or secondary tiles. They require tha
 
 ```JS
 const appId = 'electron-windows-notifications'
-const {ToastNotification} = require('electron-windows-notifications')
+const {ToastNotification} = require('electron-windows-notifications-rs4')
 
 let notification = new ToastNotification({
     appId: appId,
